@@ -1,0 +1,140 @@
+{
+    "appKeys": {
+            "btdisalert": 0,
+            "btrealert": 1,
+            "theme": 2,
+            "language": 3,
+            "btcardenabled": 4,
+            "batterycardenabled": 5,
+            "note1": 6,
+            "note1_title": 7,
+            "note1_contents": 8,
+            "note2": 9,
+            "note2_title": 10,
+            "note2_contents": 11,
+            "its_text": 12,
+            "bottom_slot": 13,
+            "battery_bar": 14,
+            "weather_card": 15,
+            "temp_pref": 16,
+            "update_freq": 17,
+            "temp": 18,
+            "icon": 19,
+            "weather_card_placement": 20,
+            "bt_card_placement": 21,
+            "battery_card_placement": 22,
+            "note_1_card_placement": 23,
+            "note_2_card_placement": 24,
+            "font_date": 25,
+            "font_card": 26
+        },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "Edwin Finch",
+    "longName": "CARDS",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/battery_icon.png",
+                "name": "IMAGE_BATTERY_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/bt_icon.png",
+                "name": "IMAGE_BLUETOOTH_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "fonts/impact.ttf",
+                "name": "FONT_IMPACT_18",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9, :]",
+                "file": "fonts/impact.ttf",
+                "name": "FONT_IMPACT_40",
+                "type": "font"
+            },
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "images/notes_icon.png",
+                "name": "IMAGE_NOTES_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/day_clear.png",
+                "name": "WEATHER_CLEAR_DAY",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/night_clear.png",
+                "name": "WEATHER_CLEAR_NIGHT",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/partially_cloudy.png",
+                "name": "WEATHER_PARTIALLY_CLOUDY_DAY",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/part_cloud_night.png",
+                "name": "WEATHER_PARTIALLY_CLOUDY_NIGHT",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/drizzle.png",
+                "name": "WEATHER_DRIZZLE",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/rain.png",
+                "name": "WEATHER_RAIN",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/cloudy.png",
+                "name": "WEATHER_CLOUDY",
+                "type": "png"
+            },
+            {
+                "file": "images/clock_icon.png",
+                "name": "IMAGE_CLOCK_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/thunder.png",
+                "name": "WEATHER_THUNDER",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/fog.png",
+                "name": "WEATHER_FOG",
+                "type": "png"
+            },
+            {
+                "file": "images/weather/snowing.png",
+                "name": "WEATHER_SNOW",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "CARDS",
+    "uuid": "3ba433cc-b4e1-4999-84e3-13d47b031e30",
+    "versionCode": 1337,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
