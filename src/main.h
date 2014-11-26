@@ -85,7 +85,7 @@ char *language_data[3][12] = {
 	{
 		"Desconectado", "Bluetooth desconectado del telefono",
 		"Conectado", "Conexion Bluetooth reestablecida con el telefono",
-    	"Bluetooth", "Son las", "carga de bateria restante", "Bateria", "activado"
+    	"Bluetooth", "Son las", "carga de bateria restante", "Bateria", "activado",
     	"grados", "y", "Tiempo"
 	}
 };
@@ -98,7 +98,7 @@ char *w_l_d[3][10] = {
 		"Gewitter", "etwas Nieselregen", "regnet", "schneit", "neblig", "klar", "klar", "teilweise bewoelkt", "teilweise bewoelkt", "wolkig"
 	},
 	{
-		"tormentas eléctricas", "llovizna", "lluvia", "nieve", "niebla", "despejado", "despejado", "parcialmente nublado", "parcialmente nublado", "nublado"
+		"eléctricas", "llovizna", "lluvia", "nieve", "niebla", "despejado", "despejado", "parcialmente nublado", "parcialmente nublado", "nublado"
 	}
 };
 
