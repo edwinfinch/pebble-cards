@@ -133,7 +133,7 @@
     "shortName": "CARDS",
     "uuid": "3ba433cc-b4e1-4999-84e3-13d47b031e30",
     "versionCode": 1337,
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "watchface": true
     }

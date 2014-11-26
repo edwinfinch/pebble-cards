@@ -62,7 +62,14 @@ char *charge_states[2] = {
 	"", "(charging)"
 };
 
-char *language_data[2][12] = {
+/*
+Language array:
+0. English
+1. German
+2. Spanish
+*/
+
+char *language_data[3][12] = {
 	{
 		"Disconnected", "Bluetooth disconnected from phone",
 		"Connected", "Bluetooth connection reestablished with phone",
@@ -74,24 +81,36 @@ char *language_data[2][12] = {
 		"Verbunden", "Bluetooth-Verbindung hergestellt",
 		"Bluetooth", "Es ist", "Restbatterie", "Batterie", "am",
 		"Grad", "und", "Wetter"
+	},
+	{
+		"Desconectado", "Bluetooth desconectado del telefono",
+		"Conectado", "Conexion Bluetooth reestablecida con el telefono",
+    	"Bluetooth", "Son las", "carga de bateria restante", "Bateria", "activado"
+    	"grados", "y", "Tiempo"
 	}
 };
 
-char *w_l_d[2][10] = {
+char *w_l_d[3][10] = {
 	{
 		"thunderstorms", "some drizzle", "raining", "snowing", "foggy", "clear", "clear", "partially cloudy", "partially cloudy", "cloudy"
 	},
 	{
 		"Gewitter", "etwas Nieselregen", "regnet", "schneit", "neblig", "klar", "klar", "teilweise bewoelkt", "teilweise bewoelkt", "wolkig"
+	},
+	{
+		"tormentas eléctricas", "llovizna", "lluvia", "nieve", "niebla", "despejado", "despejado", "parcialmente nublado", "parcialmente nublado", "nublado"
 	}
 };
 
-char *months[2][12] = {
+char *months[3][12] = {
 	{
 		"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 	},
 	{
 		"Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"
+	},
+	{
+		"Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"
 	}
 };
 

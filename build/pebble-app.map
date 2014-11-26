@@ -20,25 +20,25 @@ card_time_root      0x4               src/main.c.26.o
 battery_icon        0x4               src/main.c.26.o
 background_layer    0x4               src/main.c.26.o
 return_timer        0x4               src/main.c.26.o
-notif_layer         0xc               src/notification.c.26.o
+notif_layer         0x4               src/notification.c.26.o
 bt_icon             0x4               src/main.c.26.o
-card_note1          0x14              src/main.c.26.o
+card_note1          0x4               src/main.c.26.o
 time_content_root   0x4               src/main.c.26.o
 buildup_layer       0x4               src/main.c.26.o
-card_bt             0x14              src/main.c.26.o
-card_note2          0x14              src/main.c.26.o
+card_bt             0x4               src/main.c.26.o
+card_note2          0x4               src/main.c.26.o
 theme               0x4               src/main.c.26.o
 note_icon           0x4               src/main.c.26.o
 time_layer          0x4               src/main.c.26.o
 icon_timer          0x4               src/main.c.26.o
-card_weather        0x14              src/main.c.26.o
+card_weather        0x4               src/main.c.26.o
 card_time_layer     0x4               src/main.c.26.o
 chat_bubble_layer   0x4               src/main.c.26.o
 temp_temp_icon      0x4               src/main.c.26.o
 icon_layer_bm       0x4               src/main.c.26.o
 clock_icon          0x4               src/main.c.26.o
 refresh_timer       0x4               src/main.c.26.o
-card_battery        0x14              src/main.c.26.o
+card_battery        0x4               src/main.c.26.o
 battery_bar_layer   0x4               src/main.c.26.o
 icon_layer_fix      0x4               src/main.c.26.o
 temp_icon           0x4               src/main.c.26.o
@@ -209,7 +209,6 @@ Discarded input sections
                 0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.fonts_unload_custom_font
                 0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
- .text.free     0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.gbitmap_create_as_sub_bitmap
                 0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.gbitmap_create_with_data
@@ -293,7 +292,6 @@ Discarded input sections
                 0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.light_enable_interaction
                 0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
- .text.malloc   0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.memcpy   0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.memmove  0x0000000000000000        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text.menu_cell_basic_draw
@@ -636,7 +634,7 @@ LOAD /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/ar
  .pbl_header    0x0000000000000000       0x82 appinfo.auto.c.26.o
                 0x0000000000000000                __pbl_app_info
 
-.text           0x0000000000000088     0x2bd5
+.text           0x0000000000000088     0x2c3f
  *(.text)
  .text          0x0000000000000088       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
  .text          0x000000000000009c      0x370 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
@@ -674,498 +672,501 @@ LOAD /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/ar
                 0x00000000000008b8       0x10 src/content_layer.c.26.o
                 0x00000000000008b8                set_id_stack_value
  .text.content_layer_create
-                0x00000000000008c8       0xf0 src/content_layer.c.26.o
+                0x00000000000008c8       0xf8 src/content_layer.c.26.o
                 0x00000000000008c8                content_layer_create
  .text.content_layer_set_text
-                0x00000000000009b8       0x22 src/content_layer.c.26.o
-                0x00000000000009b8                content_layer_set_text
- *fill*         0x00000000000009da        0x2 
+                0x00000000000009c0       0x18 src/content_layer.c.26.o
+                0x00000000000009c0                content_layer_set_text
  .text.content_layer_display
-                0x00000000000009dc       0x44 src/content_layer.c.26.o
-                0x00000000000009dc                content_layer_display
+                0x00000000000009d8       0x38 src/content_layer.c.26.o
+                0x00000000000009d8                content_layer_display
  .text.content_layer_hide
-                0x0000000000000a20       0x48 src/content_layer.c.26.o
-                0x0000000000000a20                content_layer_hide
+                0x0000000000000a10       0x3c src/content_layer.c.26.o
+                0x0000000000000a10                content_layer_hide
  .text.content_layer_destroy
-                0x0000000000000a68       0x20 src/content_layer.c.26.o
-                0x0000000000000a68                content_layer_destroy
+                0x0000000000000a4c       0x20 src/content_layer.c.26.o
+                0x0000000000000a4c                content_layer_destroy
  .text.on_animation_stopped
-                0x0000000000000a88        0x4 src/extras.c.26.o
-                0x0000000000000a88                on_animation_stopped
+                0x0000000000000a6c        0x4 src/extras.c.26.o
+                0x0000000000000a6c                on_animation_stopped
  .text.text_layer_init
-                0x0000000000000a8c       0x64 src/extras.c.26.o
-                0x0000000000000a8c                text_layer_init
+                0x0000000000000a70       0x64 src/extras.c.26.o
+                0x0000000000000a70                text_layer_init
  .text.animate_layer
-                0x0000000000000af0       0x40 src/extras.c.26.o
-                0x0000000000000af0                animate_layer
+                0x0000000000000ad4       0x40 src/extras.c.26.o
+                0x0000000000000ad4                animate_layer
  .text.animate_layer_return
-                0x0000000000000b30       0x3c src/extras.c.26.o
-                0x0000000000000b30                animate_layer_return
+                0x0000000000000b14       0x3c src/extras.c.26.o
+                0x0000000000000b14                animate_layer_return
  .text.window_unload_main
-                0x0000000000000b6c      0x178 src/main.c.26.o
-                0x0000000000000b6c                window_unload_main
+                0x0000000000000b50      0x164 src/main.c.26.o
+                0x0000000000000b50                window_unload_main
  .text.icon_switch
-                0x0000000000000ce4       0x20 src/main.c.26.o
-                0x0000000000000ce4                icon_switch
+                0x0000000000000cb4       0x20 src/main.c.26.o
+                0x0000000000000cb4                icon_switch
  .text.bt_handler
-                0x0000000000000d04       0xb8 src/main.c.26.o
-                0x0000000000000d04                bt_handler
+                0x0000000000000cd4       0xb0 src/main.c.26.o
+                0x0000000000000cd4                bt_handler
  .text.battery_handler
-                0x0000000000000dbc       0xa4 src/main.c.26.o
-                0x0000000000000dbc                battery_handler
+                0x0000000000000d84       0xa0 src/main.c.26.o
+                0x0000000000000d84                battery_handler
  .text.tick_handler
-                0x0000000000000e60      0x148 src/main.c.26.o
-                0x0000000000000e60                tick_handler
+                0x0000000000000e24      0x148 src/main.c.26.o
+                0x0000000000000e24                tick_handler
  .text.circles_proc
-                0x0000000000000fa8       0x8c src/main.c.26.o
-                0x0000000000000fa8                circles_proc
+                0x0000000000000f6c       0x8c src/main.c.26.o
+                0x0000000000000f6c                circles_proc
  .text.card_time_root_proc
-                0x0000000000001034       0x28 src/main.c.26.o
-                0x0000000000001034                card_time_root_proc
+                0x0000000000000ff8       0x28 src/main.c.26.o
+                0x0000000000000ff8                card_time_root_proc
  .text.battery_layer_proc
-                0x000000000000105c       0x50 src/main.c.26.o
-                0x000000000000105c                battery_layer_proc
+                0x0000000000001020       0x50 src/main.c.26.o
+                0x0000000000001020                battery_layer_proc
  .text.chat_bubble_proc
-                0x00000000000010ac       0x2c src/main.c.26.o
-                0x00000000000010ac                chat_bubble_proc
+                0x0000000000001070       0x2c src/main.c.26.o
+                0x0000000000001070                chat_bubble_proc
  .text.animate_buildup.part.0
-                0x00000000000010d8       0x5c src/main.c.26.o
+                0x000000000000109c       0x5c src/main.c.26.o
  .text.tick_handler_fire
-                0x0000000000001134       0x1c src/main.c.26.o
-                0x0000000000001134                tick_handler_fire
+                0x00000000000010f8       0x1c src/main.c.26.o
+                0x00000000000010f8                tick_handler_fire
  .text.refresh_settings
-                0x0000000000001150      0x1f0 src/main.c.26.o
-                0x0000000000001150                refresh_settings
+                0x0000000000001114      0x1dc src/main.c.26.o
+                0x0000000000001114                refresh_settings
  .text.window_load_main
-                0x0000000000001340      0x578 src/main.c.26.o
-                0x0000000000001340                window_load_main
+                0x00000000000012f0      0x4f0 src/main.c.26.o
+                0x00000000000012f0                window_load_main
  .text.animate_buildup
-                0x00000000000018b8       0x5c src/main.c.26.o
-                0x00000000000018b8                animate_buildup
+                0x00000000000017e0       0x5c src/main.c.26.o
+                0x00000000000017e0                animate_buildup
  .text.icon_layer_switch
-                0x0000000000001914      0x104 src/main.c.26.o
-                0x0000000000001914                icon_layer_switch
+                0x000000000000183c      0x104 src/main.c.26.o
+                0x000000000000183c                icon_layer_switch
  .text.time_elements_show
-                0x0000000000001a18       0xb4 src/main.c.26.o
-                0x0000000000001a18                time_elements_show
+                0x0000000000001940       0xb4 src/main.c.26.o
+                0x0000000000001940                time_elements_show
  .text.time_elements_hide
-                0x0000000000001acc       0xb4 src/main.c.26.o
-                0x0000000000001acc                time_elements_hide
+                0x00000000000019f4       0xb4 src/main.c.26.o
+                0x00000000000019f4                time_elements_hide
  .text.hide_current_card
-                0x0000000000001b80       0x58 src/main.c.26.o
-                0x0000000000001b80                hide_current_card
+                0x0000000000001aa8       0x54 src/main.c.26.o
+                0x0000000000001aa8                hide_current_card
  .text.cards_deinit
-                0x0000000000001bd8       0x68 src/main.c.26.o
-                0x0000000000001bd8                cards_deinit
+                0x0000000000001afc       0x68 src/main.c.26.o
+                0x0000000000001afc                cards_deinit
  .text.cards_init
-                0x0000000000001c40       0x34 src/main.c.26.o
-                0x0000000000001c40                cards_init
+                0x0000000000001b64       0x34 src/main.c.26.o
+                0x0000000000001b64                cards_init
  .text.tap_handler
-                0x0000000000001c74      0x1ac src/main.c.26.o
-                0x0000000000001c74                tap_handler
+                0x0000000000001b98      0x198 src/main.c.26.o
+                0x0000000000001b98                tap_handler
  .text.process_tuple
-                0x0000000000001e20      0x208 src/main.c.26.o
-                0x0000000000001e20                process_tuple
+                0x0000000000001d30      0x208 src/main.c.26.o
+                0x0000000000001d30                process_tuple
  .text.app_message_handler
-                0x0000000000002028       0x44 src/main.c.26.o
-                0x0000000000002028                app_message_handler
- .text.init     0x000000000000206c      0x164 src/main.c.26.o
-                0x000000000000206c                init
- .text.deinit   0x00000000000021d0       0x70 src/main.c.26.o
-                0x00000000000021d0                deinit
+                0x0000000000001f38       0x44 src/main.c.26.o
+                0x0000000000001f38                app_message_handler
+ .text.init     0x0000000000001f7c      0x164 src/main.c.26.o
+                0x0000000000001f7c                init
+ .text.deinit   0x00000000000020e0       0x70 src/main.c.26.o
+                0x00000000000020e0                deinit
  .text.startup.main
-                0x0000000000002240       0x14 src/main.c.26.o
-                0x0000000000002240                main
+                0x0000000000002150       0x14 src/main.c.26.o
+                0x0000000000002150                main
  .text.root_proc
-                0x0000000000002254       0x30 src/notification.c.26.o
-                0x0000000000002254                root_proc
+                0x0000000000002164       0x30 src/notification.c.26.o
+                0x0000000000002164                root_proc
  .text.notif_layer_init
-                0x0000000000002284       0xdc src/notification.c.26.o
-                0x0000000000002284                notif_layer_init
+                0x0000000000002194      0x100 src/notification.c.26.o
+                0x0000000000002194                notif_layer_init
  .text.notif_layer_deinit
-                0x0000000000002360       0x28 src/notification.c.26.o
-                0x0000000000002360                notif_layer_deinit
+                0x0000000000002294       0x30 src/notification.c.26.o
+                0x0000000000002294                notif_layer_deinit
  .text.notif_layer_push_notif
-                0x0000000000002388       0xa0 src/notification.c.26.o
-                0x0000000000002388                notif_layer_push_notif
+                0x00000000000022c4       0xa8 src/notification.c.26.o
+                0x00000000000022c4                notif_layer_push_notif
  .text.accel_tap_service_subscribe
-                0x0000000000002428        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002428                accel_tap_service_subscribe
+                0x000000000000236c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000236c                accel_tap_service_subscribe
  .text.animation_schedule
-                0x0000000000002434        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002434                animation_schedule
+                0x0000000000002378        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002378                animation_schedule
  .text.animation_set_delay
-                0x0000000000002440        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002440                animation_set_delay
+                0x0000000000002384        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002384                animation_set_delay
  .text.animation_set_duration
-                0x000000000000244c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000244c                animation_set_duration
+                0x0000000000002390        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002390                animation_set_duration
  .text.animation_set_handlers
-                0x0000000000002458        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002458                animation_set_handlers
+                0x000000000000239c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000239c                animation_set_handlers
  .text.animation_unschedule_all
-                0x0000000000002464        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002464                animation_unschedule_all
+                0x00000000000023a8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023a8                animation_unschedule_all
  .text.app_event_loop
-                0x0000000000002470        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002470                app_event_loop
- .text.app_log  0x000000000000247c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000247c                app_log
+                0x00000000000023b4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023b4                app_event_loop
+ .text.app_log  0x00000000000023c0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023c0                app_log
  .text.app_message_open
-                0x0000000000002488        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002488                app_message_open
+                0x00000000000023cc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023cc                app_message_open
  .text.app_timer_cancel
-                0x0000000000002494        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002494                app_timer_cancel
+                0x00000000000023d8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023d8                app_timer_cancel
  .text.app_timer_register
-                0x00000000000024a0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024a0                app_timer_register
+                0x00000000000023e4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023e4                app_timer_register
  .text.app_timer_reschedule
-                0x00000000000024ac        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024ac                app_timer_reschedule
+                0x00000000000023f0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023f0                app_timer_reschedule
  .text.battery_state_service_peek
-                0x00000000000024b8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024b8                battery_state_service_peek
+                0x00000000000023fc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000023fc                battery_state_service_peek
  .text.battery_state_service_subscribe
-                0x00000000000024c4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024c4                battery_state_service_subscribe
+                0x0000000000002408        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002408                battery_state_service_subscribe
  .text.bitmap_layer_create
-                0x00000000000024d0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024d0                bitmap_layer_create
+                0x0000000000002414        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002414                bitmap_layer_create
  .text.bitmap_layer_destroy
-                0x00000000000024dc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024dc                bitmap_layer_destroy
+                0x0000000000002420        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002420                bitmap_layer_destroy
  .text.bitmap_layer_get_layer
-                0x00000000000024e8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024e8                bitmap_layer_get_layer
+                0x000000000000242c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000242c                bitmap_layer_get_layer
  .text.bitmap_layer_set_bitmap
-                0x00000000000024f4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000024f4                bitmap_layer_set_bitmap
+                0x0000000000002438        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002438                bitmap_layer_set_bitmap
  .text.bluetooth_connection_service_peek
-                0x0000000000002500        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002500                bluetooth_connection_service_peek
+                0x0000000000002444        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002444                bluetooth_connection_service_peek
  .text.bluetooth_connection_service_subscribe
-                0x000000000000250c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000250c                bluetooth_connection_service_subscribe
+                0x0000000000002450        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002450                bluetooth_connection_service_subscribe
  .text.clock_is_24h_style
-                0x0000000000002518        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002518                clock_is_24h_style
+                0x000000000000245c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000245c                clock_is_24h_style
  .text.dict_read_first
-                0x0000000000002524        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002524                dict_read_first
+                0x0000000000002468        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002468                dict_read_first
  .text.dict_read_next
-                0x0000000000002530        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002530                dict_read_next
+                0x0000000000002474        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002474                dict_read_next
  .text.fonts_get_system_font
-                0x000000000000253c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000253c                fonts_get_system_font
+                0x0000000000002480        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002480                fonts_get_system_font
  .text.fonts_load_custom_font
-                0x0000000000002548        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002548                fonts_load_custom_font
+                0x000000000000248c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000248c                fonts_load_custom_font
+ .text.free     0x0000000000002498        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002498                free
  .text.gbitmap_create_with_resource
-                0x0000000000002554        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002554                gbitmap_create_with_resource
+                0x00000000000024a4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024a4                gbitmap_create_with_resource
  .text.gbitmap_destroy
-                0x0000000000002560        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002560                gbitmap_destroy
+                0x00000000000024b0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024b0                gbitmap_destroy
  .text.graphics_context_set_fill_color
-                0x000000000000256c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000256c                graphics_context_set_fill_color
+                0x00000000000024bc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024bc                graphics_context_set_fill_color
  .text.graphics_context_set_stroke_color
-                0x0000000000002578        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002578                graphics_context_set_stroke_color
+                0x00000000000024c8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024c8                graphics_context_set_stroke_color
  .text.graphics_draw_circle
-                0x0000000000002584        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002584                graphics_draw_circle
+                0x00000000000024d4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024d4                graphics_draw_circle
  .text.graphics_fill_circle
-                0x0000000000002590        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002590                graphics_fill_circle
+                0x00000000000024e0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024e0                graphics_fill_circle
  .text.graphics_fill_rect
-                0x000000000000259c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000259c                graphics_fill_rect
+                0x00000000000024ec        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024ec                graphics_fill_rect
  .text.inverter_layer_create
-                0x00000000000025a8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025a8                inverter_layer_create
+                0x00000000000024f8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000024f8                inverter_layer_create
  .text.inverter_layer_destroy
-                0x00000000000025b4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025b4                inverter_layer_destroy
+                0x0000000000002504        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002504                inverter_layer_destroy
  .text.inverter_layer_get_layer
-                0x00000000000025c0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025c0                inverter_layer_get_layer
+                0x0000000000002510        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002510                inverter_layer_get_layer
  .text.layer_add_child
-                0x00000000000025cc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025cc                layer_add_child
+                0x000000000000251c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000251c                layer_add_child
  .text.layer_create
-                0x00000000000025d8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025d8                layer_create
+                0x0000000000002528        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002528                layer_create
  .text.layer_destroy
-                0x00000000000025e4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025e4                layer_destroy
+                0x0000000000002534        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002534                layer_destroy
  .text.layer_get_frame
-                0x00000000000025f0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025f0                layer_get_frame
+                0x0000000000002540        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002540                layer_get_frame
  .text.layer_mark_dirty
-                0x00000000000025fc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000025fc                layer_mark_dirty
+                0x000000000000254c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000254c                layer_mark_dirty
  .text.layer_set_hidden
-                0x0000000000002608        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002608                layer_set_hidden
+                0x0000000000002558        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002558                layer_set_hidden
  .text.layer_set_update_proc
-                0x0000000000002614        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002614                layer_set_update_proc
+                0x0000000000002564        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002564                layer_set_update_proc
  .text.localtime
-                0x0000000000002620        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002620                localtime
- .text.memset   0x000000000000262c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000262c                memset
+                0x0000000000002570        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002570                localtime
+ .text.malloc   0x000000000000257c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000257c                malloc
+ .text.memset   0x0000000000002588        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002588                memset
  .text.persist_exists
-                0x0000000000002638        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002638                persist_exists
+                0x0000000000002594        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002594                persist_exists
  .text.property_animation_create_layer_frame
-                0x0000000000002644        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002644                property_animation_create_layer_frame
+                0x00000000000025a0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025a0                property_animation_create_layer_frame
  .text.property_animation_destroy
-                0x0000000000002650        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002650                property_animation_destroy
- .text.rand     0x000000000000265c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000265c                rand
+                0x00000000000025ac        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025ac                property_animation_destroy
+ .text.rand     0x00000000000025b8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025b8                rand
  .text.resource_get_handle
-                0x0000000000002668        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002668                resource_get_handle
+                0x00000000000025c4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025c4                resource_get_handle
  .text.snprintf
-                0x0000000000002674        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002674                snprintf
- .text.srand    0x0000000000002680        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002680                srand
- .text.strcpy   0x000000000000268c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000268c                strcpy
+                0x00000000000025d0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025d0                snprintf
+ .text.srand    0x00000000000025dc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025dc                srand
+ .text.strcpy   0x00000000000025e8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025e8                strcpy
  .text.strftime
-                0x0000000000002698        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002698                strftime
+                0x00000000000025f4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000025f4                strftime
  .text.text_layer_create
-                0x00000000000026a4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026a4                text_layer_create
+                0x0000000000002600        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002600                text_layer_create
  .text.text_layer_destroy
-                0x00000000000026b0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026b0                text_layer_destroy
+                0x000000000000260c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000260c                text_layer_destroy
  .text.text_layer_get_layer
-                0x00000000000026bc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026bc                text_layer_get_layer
+                0x0000000000002618        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002618                text_layer_get_layer
  .text.text_layer_set_background_color
-                0x00000000000026c8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026c8                text_layer_set_background_color
+                0x0000000000002624        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002624                text_layer_set_background_color
  .text.text_layer_set_font
-                0x00000000000026d4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026d4                text_layer_set_font
+                0x0000000000002630        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002630                text_layer_set_font
  .text.text_layer_set_text
-                0x00000000000026e0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026e0                text_layer_set_text
+                0x000000000000263c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000263c                text_layer_set_text
  .text.text_layer_set_text_alignment
-                0x00000000000026ec        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026ec                text_layer_set_text_alignment
+                0x0000000000002648        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002648                text_layer_set_text_alignment
  .text.text_layer_set_text_color
-                0x00000000000026f8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000026f8                text_layer_set_text_color
+                0x0000000000002654        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002654                text_layer_set_text_color
  .text.tick_timer_service_subscribe
-                0x0000000000002704        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002704                tick_timer_service_subscribe
- .text.time     0x0000000000002710        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002710                time
+                0x0000000000002660        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002660                tick_timer_service_subscribe
+ .text.time     0x000000000000266c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000266c                time
  .text.vibes_double_pulse
-                0x000000000000271c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000271c                vibes_double_pulse
+                0x0000000000002678        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002678                vibes_double_pulse
  .text.vibes_long_pulse
-                0x0000000000002728        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002728                vibes_long_pulse
+                0x0000000000002684        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002684                vibes_long_pulse
  .text.vibes_short_pulse
-                0x0000000000002734        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002734                vibes_short_pulse
+                0x0000000000002690        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x0000000000002690                vibes_short_pulse
  .text.window_create
-                0x0000000000002740        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002740                window_create
+                0x000000000000269c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x000000000000269c                window_create
  .text.window_destroy
-                0x000000000000274c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000274c                window_destroy
+                0x00000000000026a8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026a8                window_destroy
  .text.window_get_root_layer
-                0x0000000000002758        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002758                window_get_root_layer
+                0x00000000000026b4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026b4                window_get_root_layer
  .text.window_set_window_handlers
-                0x0000000000002764        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002764                window_set_window_handlers
+                0x00000000000026c0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026c0                window_set_window_handlers
  .text.window_stack_pop
-                0x0000000000002770        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002770                window_stack_pop
+                0x00000000000026cc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026cc                window_stack_pop
  .text.window_stack_push
-                0x000000000000277c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x000000000000277c                window_stack_push
+                0x00000000000026d8        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026d8                window_stack_push
  .text.app_message_register_inbox_received
-                0x0000000000002788        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002788                app_message_register_inbox_received
+                0x00000000000026e4        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026e4                app_message_register_inbox_received
  .text.persist_read_data
-                0x0000000000002794        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x0000000000002794                persist_read_data
+                0x00000000000026f0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026f0                persist_read_data
  .text.persist_write_data
-                0x00000000000027a0        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
-                0x00000000000027a0                persist_write_data
+                0x00000000000026fc        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+                0x00000000000026fc                persist_write_data
  *(.rodata)
- .rodata        0x00000000000027ac       0x28 src/content_layer.c.26.o
- .rodata        0x00000000000027d4       0x80 src/main.c.26.o
- .rodata        0x0000000000002854       0x28 src/notification.c.26.o
+ .rodata        0x0000000000002708       0x28 src/content_layer.c.26.o
+ .rodata        0x0000000000002730       0x80 src/main.c.26.o
+ .rodata        0x00000000000027b0       0x28 src/notification.c.26.o
  *(.rodata*)
  .rodata.str1.1
-                0x000000000000287c       0x2c src/content_layer.c.26.o
+                0x00000000000027d8       0x2c src/content_layer.c.26.o
  .rodata.str1.1
-                0x00000000000028a8       0x1b src/extras.c.26.o
+                0x0000000000002804       0x1b src/extras.c.26.o
                                          0x31 (size before relaxing)
  .rodata.str1.1
-                0x00000000000028c3      0x369 src/main.c.26.o
-                                        0x38a (size before relaxing)
+                0x000000000000281f      0x477 src/main.c.26.o
+                                        0x4a2 (size before relaxing)
  .rodata.str1.1
-                0x0000000000002c2c       0x31 src/notification.c.26.o
+                0x0000000000002c96       0x31 src/notification.c.26.o
 
-.glue_7         0x0000000000002c60        0x0
+.glue_7         0x0000000000002cc8        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000002c60        0x0
+.glue_7t        0x0000000000002cc8        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000002c60        0x0
+.vfp11_veneer   0x0000000000002cc8        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000002c60        0x0
+.v4_bx          0x0000000000002cc8        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000002c60        0x0
+.iplt           0x0000000000002cc8        0x0
  .iplt          0x0000000000000000        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x0000000000002c60        0x0
+.rel.dyn        0x0000000000002cc8        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
  .rel.got       0x0000000000000000        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x0000000000002c60      0x263
+.data           0x0000000000002cc8      0x2eb
  *(.data)
- .data          0x0000000000002c60        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x0000000000002c60        0x4 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000002c60                __dso_handle
- .data          0x0000000000002c64        0x0 src/content_layer.c.26.o
- .data          0x0000000000002c64        0x0 src/extras.c.26.o
- .data          0x0000000000002c64        0x0 src/main.c.26.o
- .data          0x0000000000002c64        0x0 src/notification.c.26.o
- .data          0x0000000000002c64        0x0 appinfo.auto.c.26.o
- .data          0x0000000000002c64        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
- .data          0x0000000000002c64        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .data          0x0000000000002c64        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .data          0x0000000000002c64        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
- .data          0x0000000000002c64        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x0000000000002c64        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x0000000000002cc8        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x0000000000002cc8        0x4 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000002cc8                __dso_handle
+ .data          0x0000000000002ccc        0x0 src/content_layer.c.26.o
+ .data          0x0000000000002ccc        0x0 src/extras.c.26.o
+ .data          0x0000000000002ccc        0x0 src/main.c.26.o
+ .data          0x0000000000002ccc        0x0 src/notification.c.26.o
+ .data          0x0000000000002ccc        0x0 appinfo.auto.c.26.o
+ .data          0x0000000000002ccc        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/lib/libpebble.a(tmpDC1Ifbpebble.o)
+ .data          0x0000000000002ccc        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000002ccc        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000002ccc        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000002ccc        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x0000000000002ccc        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
  .data.ID_stack
-                0x0000000000002c64       0x14 src/content_layer.c.26.o
-                0x0000000000002c64                ID_stack
+                0x0000000000002ccc       0x14 src/content_layer.c.26.o
+                0x0000000000002ccc                ID_stack
  .data.ID_stack_top
-                0x0000000000002c78        0x4 src/content_layer.c.26.o
-                0x0000000000002c78                ID_stack_top
+                0x0000000000002ce0        0x4 src/content_layer.c.26.o
+                0x0000000000002ce0                ID_stack_top
  .data.rel.local.charge_states
-                0x0000000000002c7c        0x8 src/main.c.26.o
-                0x0000000000002c7c                charge_states
+                0x0000000000002ce4        0x8 src/main.c.26.o
+                0x0000000000002ce4                charge_states
  .data.weather_ids
-                0x0000000000002c84       0x28 src/main.c.26.o
-                0x0000000000002c84                weather_ids
+                0x0000000000002cec       0x28 src/main.c.26.o
+                0x0000000000002cec                weather_ids
  .data.d_buffer.6748
-                0x0000000000002cac        0x7 src/main.c.26.o
- *fill*         0x0000000000002cb3        0x1 
+                0x0000000000002d14        0x7 src/main.c.26.o
+ *fill*         0x0000000000002d1b        0x1 
  .data.rel.local.months
-                0x0000000000002cb4       0x60 src/main.c.26.o
-                0x0000000000002cb4                months
+                0x0000000000002d1c       0x90 src/main.c.26.o
+                0x0000000000002d1c                months
  .data.buffer.6746
-                0x0000000000002d14        0x6 src/main.c.26.o
+                0x0000000000002dac        0x6 src/main.c.26.o
  .data.final_buffer.6749
-                0x0000000000002d1a       0x22 src/main.c.26.o
+                0x0000000000002db2       0x22 src/main.c.26.o
  .data.amount_of_cards
-                0x0000000000002d3c        0x4 src/main.c.26.o
-                0x0000000000002d3c                amount_of_cards
+                0x0000000000002dd4        0x4 src/main.c.26.o
+                0x0000000000002dd4                amount_of_cards
  .data.y_buffer.6747
-                0x0000000000002d40       0x19 src/main.c.26.o
- *fill*         0x0000000000002d59        0x3 
+                0x0000000000002dd8       0x19 src/main.c.26.o
+ *fill*         0x0000000000002df1        0x3 
  .data.rel.local.language_data
-                0x0000000000002d5c       0x60 src/main.c.26.o
-                0x0000000000002d5c                language_data
+                0x0000000000002df4       0x90 src/main.c.26.o
+                0x0000000000002df4                language_data
  .data.its_buffer.6756
-                0x0000000000002dbc        0xf src/main.c.26.o
+                0x0000000000002e84        0xf src/main.c.26.o
  .data.weather_buffer.6757
-                0x0000000000002dcb       0x46 src/main.c.26.o
- *fill*         0x0000000000002e11        0x3 
+                0x0000000000002e93       0x46 src/main.c.26.o
+ *fill*         0x0000000000002ed9        0x3 
  .data.rel.local.w_l_d
-                0x0000000000002e14       0x50 src/main.c.26.o
-                0x0000000000002e14                w_l_d
- .data.card_f   0x0000000000002e64        0x4 src/main.c.26.o
-                0x0000000000002e64                card_f
+                0x0000000000002edc       0x78 src/main.c.26.o
+                0x0000000000002edc                w_l_d
+ .data.card_f   0x0000000000002f54        0x4 src/main.c.26.o
+                0x0000000000002f54                card_f
  .data.battery_buffer.6764
-                0x0000000000002e68       0x5b src/main.c.26.o
+                0x0000000000002f58       0x5b src/main.c.26.o
 
-.igot.plt       0x0000000000002ec4        0x0
+.igot.plt       0x0000000000002fb4        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.got            0x0000000000002ec4       0x88
- .got           0x0000000000002ec4       0x88 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+.got            0x0000000000002fb4       0x88
+ .got           0x0000000000002fb4       0x88 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.got.plt        0x0000000000002f4c        0xc
- .got.plt       0x0000000000002f4c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000002f4c                _GLOBAL_OFFSET_TABLE_
+.got.plt        0x000000000000303c        0xc
+ .got.plt       0x000000000000303c        0xc /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x000000000000303c                _GLOBAL_OFFSET_TABLE_
 
-.bss            0x0000000000002f58      0x22c
+.bss            0x0000000000003048      0x1d4
  *(.bss)
  *(.bss.*)
  .bss.previousFonts
-                0x0000000000002f58        0x2 src/main.c.26.o
-                0x0000000000002f58                previousFonts
- .bss.isNight   0x0000000000002f5a        0x1 src/main.c.26.o
-                0x0000000000002f5a                isNight
- .bss.booted    0x0000000000002f5b        0x1 src/main.c.26.o
-                0x0000000000002f5b                booted
+                0x0000000000003048        0x2 src/main.c.26.o
+                0x0000000000003048                previousFonts
+ .bss.isNight   0x000000000000304a        0x1 src/main.c.26.o
+                0x000000000000304a                isNight
+ .bss.booted    0x000000000000304b        0x1 src/main.c.26.o
+                0x000000000000304b                booted
  .bss.currentCard
-                0x0000000000002f5c        0x4 src/main.c.26.o
-                0x0000000000002f5c                currentCard
+                0x000000000000304c        0x4 src/main.c.26.o
+                0x000000000000304c                currentCard
  .bss.charge_percent
-                0x0000000000002f60        0x4 src/main.c.26.o
-                0x0000000000002f60                charge_percent
- COMMON         0x0000000000002f64      0x214 src/main.c.26.o
-                0x0000000000002f64                note_2
-                0x0000000000002ff0                note_1
-                0x000000000000307c                settings
-                0x00000000000030ac                date_layer
-                0x00000000000030b0                card_time_root
-                0x00000000000030b4                battery_icon
-                0x00000000000030b8                background_layer
-                0x00000000000030bc                return_timer
-                0x00000000000030c0                bt_icon
-                0x00000000000030c4                card_note1
-                0x00000000000030d8                time_content_root
-                0x00000000000030dc                buildup_layer
-                0x00000000000030e0                card_bt
-                0x00000000000030f4                card_note2
-                0x0000000000003108                theme
-                0x000000000000310c                note_icon
-                0x0000000000003110                time_layer
-                0x0000000000003114                icon_timer
-                0x0000000000003118                card_weather
-                0x000000000000312c                card_time_layer
-                0x0000000000003130                chat_bubble_layer
-                0x0000000000003134                temp_temp_icon
-                0x0000000000003138                icon_layer_bm
-                0x000000000000313c                clock_icon
-                0x0000000000003140                refresh_timer
-                0x0000000000003144                card_battery
-                0x0000000000003158                battery_bar_layer
-                0x000000000000315c                icon_layer_fix
-                0x0000000000003160                temp_icon
-                0x0000000000003164                its_layer
-                0x0000000000003168                window
-                0x000000000000316c                circles_layer
-                0x0000000000003170                saved_animation
-                0x0000000000003174                background_bitmap
- COMMON         0x0000000000003178        0xc src/notification.c.26.o
-                0x0000000000003178                notif_layer
+                0x0000000000003050        0x4 src/main.c.26.o
+                0x0000000000003050                charge_percent
+ COMMON         0x0000000000003054      0x1c4 src/main.c.26.o
+                0x0000000000003054                note_2
+                0x00000000000030e0                note_1
+                0x000000000000316c                settings
+                0x000000000000319c                date_layer
+                0x00000000000031a0                card_time_root
+                0x00000000000031a4                battery_icon
+                0x00000000000031a8                background_layer
+                0x00000000000031ac                return_timer
+                0x00000000000031b0                bt_icon
+                0x00000000000031b4                card_note1
+                0x00000000000031b8                time_content_root
+                0x00000000000031bc                buildup_layer
+                0x00000000000031c0                card_bt
+                0x00000000000031c4                card_note2
+                0x00000000000031c8                theme
+                0x00000000000031cc                note_icon
+                0x00000000000031d0                time_layer
+                0x00000000000031d4                icon_timer
+                0x00000000000031d8                card_weather
+                0x00000000000031dc                card_time_layer
+                0x00000000000031e0                chat_bubble_layer
+                0x00000000000031e4                temp_temp_icon
+                0x00000000000031e8                icon_layer_bm
+                0x00000000000031ec                clock_icon
+                0x00000000000031f0                refresh_timer
+                0x00000000000031f4                card_battery
+                0x00000000000031f8                battery_bar_layer
+                0x00000000000031fc                icon_layer_fix
+                0x0000000000003200                temp_icon
+                0x0000000000003204                its_layer
+                0x0000000000003208                window
+                0x000000000000320c                circles_layer
+                0x0000000000003210                saved_animation
+                0x0000000000003214                background_bitmap
+ COMMON         0x0000000000003218        0x4 src/notification.c.26.o
+                0x0000000000003218                notif_layer
 
 DISCARD
  libc.a(*)
@@ -1213,31 +1214,31 @@ OUTPUT(/Users/edwinfinch/pebble-projects/cards/build/pebble-app.elf elf32-little
  .comment       0x0000000000000000       0x4f appinfo.auto.c.26.o
  .comment       0x0000000000000000       0x4f /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000     0x4cb2
- .debug_info    0x0000000000000000      0x805 src/content_layer.c.26.o
- .debug_info    0x0000000000000805      0xa54 src/extras.c.26.o
- .debug_info    0x0000000000001259     0x2d8a src/main.c.26.o
- .debug_info    0x0000000000003fe3      0x709 src/notification.c.26.o
- .debug_info    0x00000000000046ec      0x39b appinfo.auto.c.26.o
- .debug_info    0x0000000000004a87       0xb9 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x0000000000004b40       0xb9 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .debug_info    0x0000000000004bf9       0xb9 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+.debug_info     0x0000000000000000     0x4ce4
+ .debug_info    0x0000000000000000      0x81b src/content_layer.c.26.o
+ .debug_info    0x000000000000081b      0xa54 src/extras.c.26.o
+ .debug_info    0x000000000000126f     0x2d69 src/main.c.26.o
+ .debug_info    0x0000000000003fd8      0x746 src/notification.c.26.o
+ .debug_info    0x000000000000471e      0x39b appinfo.auto.c.26.o
+ .debug_info    0x0000000000004ab9       0xb9 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000000000004b72       0xb9 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x0000000000004c2b       0xb9 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_abbrev   0x0000000000000000      0xc40
- .debug_abbrev  0x0000000000000000      0x292 src/content_layer.c.26.o
- .debug_abbrev  0x0000000000000292      0x231 src/extras.c.26.o
- .debug_abbrev  0x00000000000004c3      0x4c5 src/main.c.26.o
- .debug_abbrev  0x0000000000000988      0x1de src/notification.c.26.o
- .debug_abbrev  0x0000000000000b66       0x9e appinfo.auto.c.26.o
- .debug_abbrev  0x0000000000000c04       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x0000000000000c18       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .debug_abbrev  0x0000000000000c2c       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+.debug_abbrev   0x0000000000000000      0xc76
+ .debug_abbrev  0x0000000000000000      0x2a1 src/content_layer.c.26.o
+ .debug_abbrev  0x00000000000002a1      0x231 src/extras.c.26.o
+ .debug_abbrev  0x00000000000004d2      0x4d7 src/main.c.26.o
+ .debug_abbrev  0x00000000000009a9      0x1f3 src/notification.c.26.o
+ .debug_abbrev  0x0000000000000b9c       0x9e appinfo.auto.c.26.o
+ .debug_abbrev  0x0000000000000c3a       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x0000000000000c4e       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x0000000000000c62       0x14 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_loc      0x0000000000000000     0x1124
- .debug_loc     0x0000000000000000      0x262 src/content_layer.c.26.o
- .debug_loc     0x0000000000000262      0x26c src/extras.c.26.o
- .debug_loc     0x00000000000004ce      0xa47 src/main.c.26.o
- .debug_loc     0x0000000000000f15      0x20f src/notification.c.26.o
+.debug_loc      0x0000000000000000     0x10af
+ .debug_loc     0x0000000000000000      0x21b src/content_layer.c.26.o
+ .debug_loc     0x000000000000021b      0x26c src/extras.c.26.o
+ .debug_loc     0x0000000000000487      0xa27 src/main.c.26.o
+ .debug_loc     0x0000000000000eae      0x201 src/notification.c.26.o
 
 .debug_aranges  0x0000000000000000      0x240
  .debug_aranges
@@ -1257,36 +1258,36 @@ OUTPUT(/Users/edwinfinch/pebble-projects/cards/build/pebble-app.elf elf32-little
  .debug_aranges
                 0x0000000000000220       0x20 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_ranges   0x0000000000000000      0x210
- .debug_ranges  0x0000000000000000       0x50 src/content_layer.c.26.o
- .debug_ranges  0x0000000000000050       0x28 src/extras.c.26.o
- .debug_ranges  0x0000000000000078      0x170 src/main.c.26.o
- .debug_ranges  0x00000000000001e8       0x28 src/notification.c.26.o
+.debug_ranges   0x0000000000000000      0x228
+ .debug_ranges  0x0000000000000000       0x68 src/content_layer.c.26.o
+ .debug_ranges  0x0000000000000068       0x28 src/extras.c.26.o
+ .debug_ranges  0x0000000000000090      0x170 src/main.c.26.o
+ .debug_ranges  0x0000000000000200       0x28 src/notification.c.26.o
 
-.debug_line     0x0000000000000000     0x12d5
- .debug_line    0x0000000000000000      0x25d src/content_layer.c.26.o
- .debug_line    0x000000000000025d      0x1ab src/extras.c.26.o
- .debug_line    0x0000000000000408      0x753 src/main.c.26.o
- .debug_line    0x0000000000000b5b      0x19a src/notification.c.26.o
- .debug_line    0x0000000000000cf5      0x12a appinfo.auto.c.26.o
- .debug_line    0x0000000000000e1f      0x20a /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000000000001029      0x226 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
- .debug_line    0x000000000000124f       0x86 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+.debug_line     0x0000000000000000     0x13bb
+ .debug_line    0x0000000000000000      0x2d0 src/content_layer.c.26.o
+ .debug_line    0x00000000000002d0      0x1ab src/extras.c.26.o
+ .debug_line    0x000000000000047b      0x749 src/main.c.26.o
+ .debug_line    0x0000000000000bc4      0x217 src/notification.c.26.o
+ .debug_line    0x0000000000000ddb      0x12a appinfo.auto.c.26.o
+ .debug_line    0x0000000000000f05      0x20a /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x000000000000110f      0x226 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000001335       0x86 /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
 
-.debug_str      0x0000000000000000     0x1a2d
- .debug_str     0x0000000000000000      0x569 src/content_layer.c.26.o
-                                        0x5e6 (size before relaxing)
- .debug_str     0x0000000000000569      0x3ee src/extras.c.26.o
+.debug_str      0x0000000000000000     0x1a39
+ .debug_str     0x0000000000000000      0x57c src/content_layer.c.26.o
+                                        0x5f9 (size before relaxing)
+ .debug_str     0x000000000000057c      0x3ee src/extras.c.26.o
                                         0x84e (size before relaxing)
- .debug_str     0x0000000000000957      0xe58 src/main.c.26.o
+ .debug_str     0x000000000000096a      0xe51 src/main.c.26.o
                                        0x16e6 (size before relaxing)
- .debug_str     0x00000000000017af       0x72 src/notification.c.26.o
-                                        0x412 (size before relaxing)
- .debug_str     0x0000000000001821      0x20c appinfo.auto.c.26.o
+ .debug_str     0x00000000000017bb       0x72 src/notification.c.26.o
+                                        0x420 (size before relaxing)
+ .debug_str     0x000000000000182d      0x20c appinfo.auto.c.26.o
                                         0x533 (size before relaxing)
 
-.debug_frame    0x0000000000000000      0x570
- .debug_frame   0x0000000000000000       0xf0 src/content_layer.c.26.o
- .debug_frame   0x00000000000000f0       0x80 src/extras.c.26.o
- .debug_frame   0x0000000000000170      0x378 src/main.c.26.o
- .debug_frame   0x00000000000004e8       0x88 src/notification.c.26.o
+.debug_frame    0x0000000000000000      0x544
+ .debug_frame   0x0000000000000000       0xe0 src/content_layer.c.26.o
+ .debug_frame   0x00000000000000e0       0x80 src/extras.c.26.o
+ .debug_frame   0x0000000000000160      0x35c src/main.c.26.o
+ .debug_frame   0x00000000000004bc       0x88 src/notification.c.26.o

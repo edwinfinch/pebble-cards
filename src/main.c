@@ -7,7 +7,7 @@
 void bt_handler(bool connected);
 void battery_handler(BatteryChargeState state);
 
-ContentLayer card_weather, card_bt, card_battery, card_note1, card_note2;
+ContentLayer *card_weather, *card_bt, *card_battery, *card_note1, *card_note2;
 
 void chat_bubble_proc(Layer *l, GContext *ctx){
 	graphics_fill_rect(ctx, GRect(16, 52, 113, 72), 3, GCornersAll);
@@ -377,51 +377,51 @@ void tap_handler(AccelAxisType axis, int32_t direction){
 			app_timer_reschedule(return_timer, 5000);
 			animate_buildup(false);
 
-			if(id == card_weather.ID){
+			if(id == card_weather->ID){
 				if(settings.weather_card){
 					content_layer_display(card_weather);
-					currentCard = card_weather.R_ID;
+					currentCard = card_weather->R_ID;
 					icon_layer_switch(NULL);
 			    }
 			    else{
 			    	goto DEFAULT_T;
 			    }
 			}
-			else if(id == card_bt.ID){
+			else if(id == card_bt->ID){
 				if(settings.bt_card){
 					content_layer_display(card_bt);
-					currentCard = card_bt.R_ID;
+					currentCard = card_bt->R_ID;
 					icon_layer_switch(bt_icon);
 				}
 				else{
 					goto DEFAULT_T;
 				}
 			}
-			else if(id == card_battery.ID){
+			else if(id == card_battery->ID){
 				if(settings.battery_card){
 					content_layer_display(card_battery);
-					currentCard = card_battery.R_ID;
+					currentCard = card_battery->R_ID;
 					icon_layer_switch(battery_icon);
 				}
 				else{
 					goto DEFAULT_T;
 				}
 			}
-			else if(id == card_note1.ID){
+			else if(id == card_note1->ID){
 				if(settings.note_1){
 					content_layer_display(card_note1);
-					currentCard = card_note1.R_ID;
+					currentCard = card_note1->R_ID;
 					icon_layer_switch(note_icon);
 				}
 				else{
 					goto DEFAULT_T;
 				}
 			}
-			else if(id == card_note2.ID){
+			else if(id == card_note2->ID){
 				if(settings.note_2){
 					content_layer_display(card_note2);
-					currentCard = card_note2.R_ID;
-					if(currentCard != card_note1.R_ID){
+					currentCard = card_note2->R_ID;
+					if(currentCard != card_note1->R_ID){
 						icon_layer_switch(note_icon);
 					}
 				}
@@ -517,23 +517,23 @@ void process_tuple(Tuple *t){
 			break;
 		case 20:
 			settings.placements[0] = value;
-			set_id_stack_value(value, card_weather.ID);
+			set_id_stack_value(value, card_weather->ID);
 			break;
 		case 21:
 			settings.placements[1] = value;
-			set_id_stack_value(value, card_bt.ID);
+			set_id_stack_value(value, card_bt->ID);
 			break;
 		case 22:
 			settings.placements[2] = value;
-			set_id_stack_value(value, card_battery.ID);
+			set_id_stack_value(value, card_battery->ID);
 			break;
 		case 23:
 			settings.placements[3] = value;
-			set_id_stack_value(value, card_note1.ID);
+			set_id_stack_value(value, card_note1->ID);
 			break;
 		case 24:
 			settings.placements[4] = value;
-			set_id_stack_value(value, card_note2.ID);
+			set_id_stack_value(value, card_note2->ID);
 			break;
 		case 25:
 			previousFonts[0] = settings.fonts[0];
@@ -631,11 +631,11 @@ void window_load_main(Window *window){
 	card_note2 = content_layer_create(window, 5, settings.fonts[1]);
 	content_layer_set_text(card_note2, "Something", "Notes r fun 4 all!!!");
 
-	set_id_stack_value(settings.placements[0], card_weather.ID);
-	set_id_stack_value(settings.placements[1], card_bt.ID);
-	set_id_stack_value(settings.placements[2], card_battery.ID);
-	set_id_stack_value(settings.placements[3], card_note1.ID);
-	set_id_stack_value(settings.placements[4], card_note2.ID);
+	set_id_stack_value(settings.placements[0], card_weather->ID);
+	set_id_stack_value(settings.placements[1], card_bt->ID);
+	set_id_stack_value(settings.placements[2], card_battery->ID);
+	set_id_stack_value(settings.placements[3], card_note1->ID);
+	set_id_stack_value(settings.placements[4], card_note2->ID);
 
 	buildup_layer = text_layer_create(GRect(0, 164, 0, 9));
 	text_layer_set_background_color(buildup_layer, GColorBlack);
