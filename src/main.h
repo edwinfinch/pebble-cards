@@ -7,6 +7,7 @@
 #define CARD_BATTERY 3
 #define CARD_NOTE_1 4
 #define CARD_NOTE_2 5
+#define WEATHER_REFRESH_INTERVAL_MS 1800000
 
 Window *window;
 	
@@ -19,7 +20,7 @@ BitmapLayer *icon_layer_bm;
 
 InverterLayer *theme;
 
-AppTimer *return_timer, *icon_timer, *refresh_timer;
+AppTimer *return_timer, *icon_timer, *refresh_timer, *weather_timer;
 
 Animation *saved_animation;
 
@@ -69,7 +70,7 @@ Language array:
 2. Spanish
 */
 
-char *language_data[3][12] = {
+char *language_data[4][12] = {
 	{
 		"Disconnected", "Bluetooth disconnected from phone",
 		"Connected", "Bluetooth connection reestablished with phone",
@@ -87,10 +88,16 @@ char *language_data[3][12] = {
 		"Conectado", "Conexion Bluetooth reestablecida con el telefono",
     	"Bluetooth", "Son las", "carga de bateria restante", "Bateria", "activado",
     	"grados", "y", "Tiempo"
-	}
+	},
+	{
+	    "Déconnecté", "Bluetooth déconnecté du téléphone",
+	    "Connecté", "Bluetooth reconnecté avec le téléphone",
+	    "Bluetooth", "Il est", "de charge restante", "Batterie", "le",
+	    "degrés", "et", "Météo"
+  	}
 };
 
-char *w_l_d[3][10] = {
+char *w_l_d[4][10] = {
 	{
 		"thunderstorms", "some drizzle", "raining", "snowing", "foggy", "clear", "clear", "partially cloudy", "partially cloudy", "cloudy"
 	},
@@ -99,10 +106,13 @@ char *w_l_d[3][10] = {
 	},
 	{
 		"eléctricas", "llovizna", "lluvia", "nieve", "niebla", "despejado", "despejado", "parcialmente nublado", "parcialmente nublado", "nublado"
-	}
+	},
+	{
+    	"orage", "bruine", "pluie", "neige", "brouillard", "clair", "clair", "partiellement nuageux", "partiellement nuageux", "nuageux"
+  	}
 };
 
-char *months[3][12] = {
+char *months[4][12] = {
 	{
 		"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 	},
@@ -111,7 +121,10 @@ char *months[3][12] = {
 	},
 	{
 		"Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"
-	}
+	},
+	{
+    	"Jan", "Fév", "Mar", "Avr", "Mai", "Jui", "Jul", "Aoû", "Sep", "Oct", "Nov", "Déc"
+  	}
 };
 
 uint32_t weather_ids[10] = {

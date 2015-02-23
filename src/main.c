@@ -126,6 +126,21 @@ void refresh_settings(){
 	}
 }
 
+//Send some random data asking for weather (please and thanks)
+void refresh_weather(){
+	Tuplet value = TupletInteger(1, 1);
+	DictionaryIterator *iter;
+	app_message_outbox_begin(&iter);
+	if (iter == NULL) {
+		return;
+	}
+	dict_write_tuplet(iter, &value);
+	dict_write_end(iter);
+	app_message_outbox_send();
+
+	weather_timer = app_timer_register(WEATHER_REFRESH_INTERVAL_MS, refresh_weather, NULL);
+}
+
 void battery_handler(BatteryChargeState state){
 	bool markDirty = false;
 	if(state.charge_percent != charge_percent){
@@ -746,9 +761,10 @@ void init(){
 	app_message_open(512, 512);
 
 	srand(time(NULL));
+
+	weather_timer = app_timer_register(WEATHER_REFRESH_INTERVAL_MS, refresh_weather, NULL);
 	
-	bool this_doesnt_do_anything_so_why_does_it_matter_to_have_it_here_seriously = true;
-	window_stack_push(window, this_doesnt_do_anything_so_why_does_it_matter_to_have_it_here_seriously);
+	window_stack_push(window, true);
 }
 
 void deinit(){

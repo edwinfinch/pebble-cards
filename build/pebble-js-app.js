@@ -17,8 +17,14 @@ Pebble.addEventListener("webviewclosed", function (e) {
         console.log("User hit save");
         values = JSON.parse(decodeURIComponent(e.response));
         console.log("stringified options: " + JSON.stringify((values)));
-        for(var key in values) {
-            localStorage.setItem(key, values[key]);
+
+        if(values.customLoc){
+          localStorage.setItem("customLoc", values.customLoc.replace(" ", ""));
+          console.log("Set customLoc to: " + values.customLoc.replace(" ", ""));
+        }
+        if(values.customLoc === ""){
+          localStorage.setItem("customLoc", "noLOC");
+          console.log("Reset customLoc");
         }
         
         Pebble.sendAppMessage(
@@ -57,41 +63,32 @@ function iconFromWeatherId(weatherId) {
   }
 }
 
-function fetchWeather(latitude, longitude) {
+function fetchWeather(toattach) {
   var response;
   var req = new XMLHttpRequest();
-  req.open('GET', "http://api.openweathermap.org/data/2.5/weather?" + "lat=" + latitude + "&lon=" + longitude, true);
-
-  console.log("http://api.openweathermap.org/data/2.5/weather?" + "lat=" + latitude + "&lon=" + longitude);
+  var address = "http://api.openweathermap.org/data/2.5/weather?" + toattach;
+  req.open('GET', address, true);
+  console.log("Getting new weather data from: " + address);
   req.onload = function(e) {
     if (req.readyState == 4) {
       if(req.status == 200) {
-        console.log(req.responseText);
+        console.log("Response success. Result: \n" + req.responseText);
         response = JSON.parse(req.responseText);
-        console.log("Response: " + response);
-        var temperature, icon;
-            var weatherResultList = response.weather[0];
-            temperature = response.main.temp;
-            icon = iconFromWeatherId(weatherResultList.id);
-            console.log("It is " + temperature + " degrees");
-            console.log("Icon resource loaded: " + icon);
-            //Incase of future location error, save the working address, longitude and latitude
-            localStorage.setItem("latitude1", latitude);
-            localStorage.setItem("longitude1", longitude);
-            console.log("Working latitude: " + localStorage.getItem("latitude1"));
-            console.log("Working longitude: " + localStorage.getItem("longitude1"));
+    var temperature, condition;
+      var weatherResultList = response.weather[0];
+      temperature = response.main.temp;
+      condition = iconFromWeatherId(weatherResultList.id);
 
           Pebble.sendAppMessage({
-            "icon":icon,
+            "icon":condition,
             "temp":temperature,
-            });
-        //}
+      });
       } else {
-            console.log("Error: could not connect! (is api.openweathermap.com down?)");
+          console.log("Error: could not connect! (is api.openweathermap.com down?)");
       }
     }
   };
-  req.send(null);
+  req.send();
 }
 
 function locationSuccess(pos) {
@@ -100,9 +97,6 @@ function locationSuccess(pos) {
         console.log("Location success! Fetching weather...");
         fetchWeather(coordinates.latitude, coordinates.longitude);
         fetched = 1;
-    }
-    else if(fetched == 1){
-        return;
     }
 }
 
@@ -117,52 +111,50 @@ function locationError(err) {
     console.log("Because of error: " + temperatureError);
 }
 
-var locationOptions = { "timeout": 15000, "maximumAge": 60000 }; 
-var long_s = 0;
-var lat_s = 0;
-var fetchtype = 0;
-var d = new Date();
-var n = d.getDate();
+var locationOptions = { "timeout": 10000, "maximumAge": 30000 }; 
+var fetched = 0;
+
+function formatLatAndLong(lat, lon){
+  var toReturn = "lat=" + lat + "&lon=" + lon;
+  return toReturn;
+}
+
+function formatCustomLoc(customLoc){
+  var toReturn = "q=" + customLoc;
+  return toReturn;
+}
+
+function locationSuccess(pos) {
+  var coordinates = pos.coords;
+  if(fetched === 0){
+    fetchWeather(formatLatAndLong(coordinates.latitude, coordinates.longitude));
+    fetched = 1;
+  }
+}
 
 function get_weather(){
-    locationWatcher = window.navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
+    fetched = 0;
+    var customLoc = localStorage.getItem("customLoc");
+    if(customLoc === "noLOC" || customLoc === null || customLoc === ""){
+      locationWatcher = window.navigator.geolocation.watchPosition(locationSuccess, locationError, locationOptions);
+    }
+    else{
+      fetchWeather(formatCustomLoc(customLoc));
+    }
 }
 
 Pebble.addEventListener("ready",
                         function(e) {
                           console.log("connect!" + e.ready);
-                            console.log("DATE IS: " + n);
-                            long_s = parseFloat(localStorage.getItem("long_s"));
-                            lat_s = parseFloat(localStorage.getItem("lat_s"));
-                            fetchtype = parseInt(localStorage.getItem("fetchtype"));
-                            console.log("Got values: " + long_s + " and " + lat_s + " and " + fetchtype);
-                            if(fetchtype === 1){
-                                console.log("Fetching weather with specified coordinates: " + long_s + " and " + lat_s);
-                                fetchWeather(lat_s, long_s);
-                            }
-                            else{
-                                console.log("Specified coordinates is false...");
-                                if(parseInt(localStorage.getItem("day_fetched")) !== n){
-                                    console.log("Fetching with GPS location.");
-                                    locationWatcher = window.navigator.geolocation.watchPosition(locationSuccess, locationError, locationOptions);  
-                                }
-                                else{
-                                    console.log("Fetching from previous stored longitude and latitude");
-                                    var lat_l = parseInt(localStorage.getItem("latitude1"));
-                                    var long_l = parseInt(localStorage.getItem("longitude1"));
-                                    fetchWeather(lat_l, long_l);
-                                }
-                            }
-                            localStorage.setItem("day_fetched", n);
+                            
+                          get_weather();
+                            
                           console.log(e.type);
-                          setInterval(function() {
-                            getWeather();
-                          }, 1800000);
                         });
 
 Pebble.addEventListener("appmessage",
                         function(e) {
                             console.log(e.type);
-                            console.log(e.payload.temperature);
                             console.log("message!");
+                            get_weather();
                         });

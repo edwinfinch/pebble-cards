@@ -1,6 +1,6 @@
-# project  configured on Wed Nov 26 14:12:24 2014 by
+# project  configured on Mon Feb 23 10:25:51 2015 by
 # waf 1.7.11 (abi 98, python 20706f0 on darwin)
-# using /Users/edwinfinch/pebble-dev/PebbleSDK-2.6.1/Pebble/waf configure build
+# using /Users/edwinfinch/pebble-dev/PebbleSDK-2.8/Pebble/waf configure build
 #
 ----------------------------------------
 Setting top to
