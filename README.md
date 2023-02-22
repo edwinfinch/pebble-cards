@@ -3,4 +3,4 @@ cards
 
 CARDS watchface for Pebble.
 
-This repository is illigal to redistribute and whatnot. See license. 
+Built in February 2015 by Edwin Finch & Philipp Weder.
